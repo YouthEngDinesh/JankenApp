@@ -195,3 +195,4 @@ C:\Users\dinesh\Documents\GitHub\CSharpTraining\JankenApp\Task4_JankenApp\obj\De
 C:\Users\dinesh\Documents\GitHub\CSharpTraining\JankenApp\Task4_JankenApp\obj\Debug\net10.0\Task4_JankenApp.pdb
 C:\Users\dinesh\Documents\GitHub\CSharpTraining\JankenApp\Task4_JankenApp\obj\Debug\net10.0\Task4_JankenApp.genruntimeconfig.cache
 C:\Users\dinesh\Documents\GitHub\CSharpTraining\JankenApp\Task4_JankenApp\obj\Debug\net10.0\ref\Task4_JankenApp.dll
+C:\Users\dinesh\Documents\GitHub\CSharpTraining\JankenApp\Task4_JankenApp\obj\Debug\net10.0\Task4_JankenApp.sourcelink.json
