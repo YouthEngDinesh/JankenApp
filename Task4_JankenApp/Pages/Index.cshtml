@@ -1,0 +1,84 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Janken Game";
+}
+
+<style>
+    .janken-btn {
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .janken-btn:hover {
+        transform: scale(1.08);
+    }
+    .pop-in {
+        animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    @@keyframes popIn {
+        0% { transform: scale(0.7); opacity: 0; }
+        100% { transform: scale(1); opacity: 1; }
+    }
+</style>
+
+<div class="container mt-5" style="max-width: 600px;">
+    <div class="card shadow-lg border-0 rounded-4 text-center">
+        <div class="card-header bg-dark text-white py-3">
+            <h3 class="mb-0 fw-bold">🎮 C# Enum Janken Arena</h3>
+        </div>
+        
+        <div class="card-body p-5 bg-light">
+            <p class="text-muted mb-4">Choose your move to instantly challenge the CPU!</p>
+            
+            <!-- Standard form posting directly back to the OnPost lifecycle engine -->
+            <form method="post">
+                <div class="d-flex justify-content-center gap-3 mb-2">
+                    
+                    <!-- 1. Rock Button option mapped via string-to-enum model binding -->
+                    <button type="submit" name="UserHand" value="Rock" class="btn btn-primary btn-lg px-4 py-3 rounded-3 janken-btn shadow-sm fs-2">
+                        ✊ <span class="d-block fs-6 fw-bold mt-1">Rock</span>
+                    </button>
+
+                    <!-- 2. Scissors Button option -->
+                    <button type="submit" name="UserHand" value="Scissors" class="btn btn-info text-white btn-lg px-4 py-3 rounded-3 janken-btn shadow-sm fs-2">
+                        ✌️ <span class="d-block fs-6 fw-bold mt-1">Scissors</span>
+                    </button>
+
+                    <!-- 3. Paper Button option -->
+                    <button type="submit" name="UserHand" value="Paper" class="btn btn-warning text-white btn-lg px-4 py-3 rounded-3 janken-btn shadow-sm fs-2">
+                        ✋ <span class="d-block fs-6 fw-bold mt-1">Paper</span>
+                    </button>
+
+                </div>
+            </form>
+
+            <!-- Interactive Match Visual Outcome Board -->
+            @if (Model.CpuHand != null)
+            {
+                <div class="mt-5 pt-3 border-top pop-in">
+                    <div class="row mb-4">
+                        <div class="col-6 border-end">
+                            <span class="text-secondary small fw-bold uppercase">Your Choice</span>
+                            <h2 class="mt-2">
+                                @(Model.UserHand == Task4_JankenApp.Pages.Hand.Rock ? "✊ Rock" :
+                                  Model.UserHand == Task4_JankenApp.Pages.Hand.Scissors ? "✌️ Scissors" : "✋ Paper")
+                            </h2>
+                        </div>
+                        <div class="col-6">
+                            <span class="text-secondary small fw-bold uppercase">CPU Choice</span>
+                            <h2 class="mt-2 text-primary">
+                                @(Model.CpuHand == Task4_JankenApp.Pages.Hand.Rock ? "✊ Rock" :
+                                  Model.CpuHand == Task4_JankenApp.Pages.Hand.Scissors ? "✌️ Scissors" : "✋ Paper")
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Notification Style wrapper built cleanly using the code data stream -->
+                    <div class="alert alert-@Model.AlertClass shadow border-0 rounded-3 py-3" role="alert">
+                        <h3 class="alert-heading mb-0 fw-extrabold">@Model.GameResult</h3>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
