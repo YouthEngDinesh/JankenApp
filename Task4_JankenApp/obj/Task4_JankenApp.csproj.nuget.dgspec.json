@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dinesh\\Documents\\GitHub\\CSharpTraining\\GuptaDinesh\\Task4_JankenApp\\Task4_JankenApp.csproj": {}
+    "C:\\Users\\dinesh\\Documents\\GitHub\\CSharpTraining\\JankenApp\\Task4_JankenApp\\Task4_JankenApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dinesh\\Documents\\GitHub\\CSharpTraining\\GuptaDinesh\\Task4_JankenApp\\Task4_JankenApp.csproj": {
+    "C:\\Users\\dinesh\\Documents\\GitHub\\CSharpTraining\\JankenApp\\Task4_JankenApp\\Task4_JankenApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dinesh\\Documents\\GitHub\\CSharpTraining\\GuptaDinesh\\Task4_JankenApp\\Task4_JankenApp.csproj",
+        "projectUniqueName": "C:\\Users\\dinesh\\Documents\\GitHub\\CSharpTraining\\JankenApp\\Task4_JankenApp\\Task4_JankenApp.csproj",
         "projectName": "Task4_JankenApp",
-        "projectPath": "C:\\Users\\dinesh\\Documents\\GitHub\\CSharpTraining\\GuptaDinesh\\Task4_JankenApp\\Task4_JankenApp.csproj",
+        "projectPath": "C:\\Users\\dinesh\\Documents\\GitHub\\CSharpTraining\\JankenApp\\Task4_JankenApp\\Task4_JankenApp.csproj",
         "packagesPath": "C:\\Users\\dinesh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dinesh\\Documents\\GitHub\\CSharpTraining\\GuptaDinesh\\Task4_JankenApp\\obj\\",
+        "outputPath": "C:\\Users\\dinesh\\Documents\\GitHub\\CSharpTraining\\JankenApp\\Task4_JankenApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
